@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+📦 Inventory Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An internal inventory management system built for tracking, updating, and exporting IT equipment data across teams. Designed with a clean UI, persistent database, and spreadsheet export capabilities to streamline physical asset tracking.
 
-## Available Scripts
+🚀 Features
+Live Dashboard to view inventory counts across laptops, peripherals, shipping, and cleaning supplies
+Form Input System to quickly record item usage or returns
+Editable Summary Table with inline quantity updates
+CSV Export matching the original inventory spreadsheet layout and styling
+Historical Snapshots of past inventory states
+Default Quantity Items (e.g. gloves, shipping tape) are auto-filled and editable
+Grouped & Colored Excel Export with accurate categories, spacing, and formatting
+(Planned) User Authentication for secure team-based access
+(Planned) Audit Log and Role-Based Access Controls
+🛠️ Tech Stack
+Layer	Tools Used
+Frontend	React, Tailwind CSS
+Backend	Flask (Python)
+Database	Supabase (PostgreSQL)
+Export	Python’s openpyxl and pandas for Excel formatting
+Deployment	Vercel (Frontend), Render (Backend)
+📷 Screenshots
+Coming Soon – include a screenshot or GIF of the dashboard and export file preview
+📂 Folder Structure (Example)
+📁 client/              # React frontend
+📁 server/              # Flask backend
+📁 data/                # Exported Excel files
+📁 supabase/            # Supabase setup and schema
+📄 Export Format Example
+Your exported spreadsheet will look exactly like the original template:
 
-In the project directory, you can run:
+✅ Grouped by Category (Laptops, Peripherals, etc.)
+✅ Colored section headers (green for laptops, orange for peripherals)
+✅ Bold fonts, correct spacing, and alignment
+✅ Columns: Item, Min., Count
+✅ Filename includes today’s date
+🧪 How to Run Locally
+# Frontend
+cd client
+npm install
+npm run dev
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Backend
+cd server
+pip install -r requirements.txt
+flask run
+Create a .env file to securely store your Supabase API keys.
+✅ Status
+ Track inventory counts
+ Editable summary table
+ Clean CSV/Excel export
+ Authentication system (coming soon)
+ Role-based access & audit log (in progress)
