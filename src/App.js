@@ -1,4 +1,3 @@
-// ✅ Finalized App.js with side-by-side Excel export + editable summary + full item list
 import React, { useEffect, useState } from "react";
 import InventoryForm from "./components/InventoryForm";
 import Welcome from "./components/Welcome";
