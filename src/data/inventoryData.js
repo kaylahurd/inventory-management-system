@@ -1,4 +1,4 @@
-const inventoryData = {
+const inventoryData = { //laptops
   laptops: [
     "E15",
     "E590",
